@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FlightSearchComponent } from './flight-search/flight-search.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,7 @@ import { FlightSearchComponent } from './flight-search/flight-search.component';
     FlightSearchComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

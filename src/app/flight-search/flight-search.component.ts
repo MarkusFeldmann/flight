@@ -1,7 +1,6 @@
 import { Flight } from '../entities/flight';
 import { Component, OnInit } from '@angular/core';
 import { Http, Headers, URLSearchParams } from '@angular/http';
-import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'flight-search',
@@ -30,7 +29,9 @@ export class FlightSearchComponent {
 
     this.http
       .get(url, { headers, search })
-      .map(resp => resp.json())
+      .map(resp => { 
+        console.log("--> " + resp.text());
+        return resp.json() })
       .subscribe(flights => {
         this.flights = flights;
       },
