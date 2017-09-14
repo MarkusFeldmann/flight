@@ -1,5 +1,5 @@
 import { Flight } from '../entities/flight';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { Http, Headers, URLSearchParams } from '@angular/http';
 
 @Component({
