@@ -3,7 +3,7 @@
   <p>Flugnr. #{{item.id}}</p>
   <p>Datum #{{item.date | date: 'dd.MM.yyyy HH:mm'}}</p>
   <p>
-    <button *ngIf="!Selected" class="btn btn-default" (click)="select()">Select</button>
-    <button *ngIf="Selected" class="btn btn-default" (click)="unelect()">Unselect</button>
+    <button *ngIf="!selected" class="btn btn-default" (click)="select()">Select</button>
+    <button *ngIf="selected" class="btn btn-default" (click)="unselect()">Unselect</button>
   </p>
 </div>

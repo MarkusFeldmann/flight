@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { FlightSearchComponent } from './flight-search/flight-search.component';
 import { HttpModule } from '@angular/http';
 import { FlightCardComponent } from './flight-card/flight-card.component';
+import { DateComponent } from './shared/date/date.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FlightSearchComponent,
-    FlightCardComponent
+    FlightCardComponent,
+    DateComponent
   ],
   imports: [
     BrowserModule, HttpModule, FormsModule

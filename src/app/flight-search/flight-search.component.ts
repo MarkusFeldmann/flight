@@ -1,4 +1,5 @@
 import { Flight } from '../entities/flight';
+import { DateComponent } from '../shared/date/date.component';
 import { Component, OnInit, NgModule } from '@angular/core';
 import { Http, Headers, URLSearchParams } from '@angular/http';
 
