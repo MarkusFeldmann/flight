@@ -14,8 +14,11 @@ export class FlightSearchComponent {
   public date: string = (new Date()).toISOString();
   public flights: Array<Flight>[];
   selectedFlight: Flight;
+  public basket: Map<number, boolean>;
 
-  constructor(private http: Http) { }
+  constructor(private http: Http) {
+    this.basket = new Map<number, boolean>();
+   }
 
   search() {
     let url = "http://www.angular-akademie.com/api/flight";

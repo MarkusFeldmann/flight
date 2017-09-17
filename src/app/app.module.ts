@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FlightSearchComponent } from './flight-search/flight-search.component';
 import { HttpModule } from '@angular/http';
+import { FlightCardComponent } from './flight-card/flight-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FlightSearchComponent
+    FlightSearchComponent,
+    FlightCardComponent
   ],
   imports: [
     BrowserModule, HttpModule, FormsModule
